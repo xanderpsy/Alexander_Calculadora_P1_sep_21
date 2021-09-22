@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/tvPantalla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25dp"
+        android:layout_margin="30dp"
+        android:background="#F3EBEB"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="359dp"
+        android:layout_height="342dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btnBorrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:text="AC"
+                android:theme="@style/AppTheme.Gray"
+
+                />
+
+            <Button
+                android:id="@+id/btnC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:text="c"
+                android:theme="@style/AppTheme.Gray" />
+
+            <Button
+                android:id="@+id/btnPorcioento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:text="%"
+                android:theme="@style/AppTheme.Gray" />
+
+            <Button
+                android:id="@+id/btnDivision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:text="/"
+                android:theme="@style/AppTheme.Gray2"
+                android:onClick="operacionclick"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btnsiete"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:text="7"
+                android:onClick="numbeButtonClicked"
+                />
+
+            <Button
+                android:id="@+id/btnOcho"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:text="8"
+                android:onClick="numbeButtonClicked"/>
+
+            <Button
+                android:id="@+id/btnNueve"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:text="9"
+                android:onClick="numbeButtonClicked"/>
+
+            <Button
+                android:id="@+id/btnPor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:text="x"
+                android:theme="@style/AppTheme.Gray2"
+                android:onClick="operacionclick"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btnCuatro"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:text="4"
+                android:onClick="numbeButtonClicked"
+                />
+
+            <Button
+                android:id="@+id/btnCinco"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:text="5"
+                android:onClick="numbeButtonClicked"/>
+
+            <Button
+                android:id="@+id/btnSeis"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:text="6"
+                android:onClick="numbeButtonClicked"/>
+
+            <Button
+                android:id="@+id/btnmenos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:text="-"
+                android:theme="@style/AppTheme.Gray2"
+                android:onClick="operacionclick"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btnUno"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:text="1"
+                android:onClick="numbeButtonClicked"
+                />
+
+            <Button
+                android:id="@+id/btnDos"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:text="2"
+                android:onClick="numbeButtonClicked"/>
+
+            <Button
+                android:id="@+id/btnTres"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:text="3"
+                android:onClick="numbeButtonClicked"
+                />
+
+            <Button
+                android:id="@+id/btnMas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:text="+"
+                android:theme="@style/AppTheme.Gray2"
+                android:onClick="operacionclick"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/btnCero"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:backgroundTint="@color/teal_700"
+                android:insetLeft="70dp"
+                android:insetRight="70dp"
+                android:text="0"
+                android:onClick="numbeButtonClicked"
+                />
+
+            <Button
+                android:id="@+id/btnPunto"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:onClick="numbeButtonClicked"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btnIgual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@color/white"
+                android:backgroundTint="@color/black"
+                android:text="="
+
+
+                android:theme="@style/AppTheme.Gray3" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
